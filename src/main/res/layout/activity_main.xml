@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    >
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Score : "
+        android:textColor="#DF1818"
+        android:textSize="20sp"
+        android:paddingVertical="14dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        />
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="270dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/box_right"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/box_right"
+            android:layout_gravity="bottom"
+
+            />
+        <ImageView
+            android:visibility="invisible"
+
+            android:id="@+id/black"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/black"/>
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/orange"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/orange"/>
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/pink"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/pink"
+            android:layout_gravity="top"
+            android:layout_marginLeft="30dp"
+            />
+            <LinearLayout
+                android:id="@+id/layout_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eating the Oranges"
+                    android:textSize="25sp"
+                    android:textColor="#FB8C00"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:id="@+id/high_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:layout_marginTop="28dp"
+                    android:text="High _ score"/>
+                <Button
+                    android:id="@+id/start_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start"
+                    android:layout_marginTop="15dp"/>
+
+
+
+            </LinearLayout>
+
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>
